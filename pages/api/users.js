@@ -7,7 +7,6 @@ export default async function handler(req, res) {
     "mongodb+srv://derekmason:boop@boop.y55kq.mongodb.net/?retryWrites=true&w=majority";
   mongoose.connect(connection, function (err) {
     if (err) throw err;
-    console.log("Successfully connected to MongoDB");
   });
   if (req.method === "POST") {
     const newUser = new User({
@@ -17,12 +16,18 @@ export default async function handler(req, res) {
       last_name: req.body.last,
       joined: new Date(),
     });
-
     newUser.save(function (err) {
       if (err) throw err;
     });
     res.status(201).send(newUser);
   } else {
-    res.status(200).json("All Users");
+    if (req.query.user_id) {
+      const id = req.query.user_id;
+      const user = await User.findOne({ _id: id });
+      res.status(200).send(user);
+    } else {
+      const allUsers = await User.find({});
+      res.status(200).json(allUsers);
+    }
   }
 }
