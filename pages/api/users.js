@@ -10,7 +10,6 @@ export default async function handler(req, res) {
     console.log("Successfully connected to MongoDB");
   });
   if (req.method === "POST") {
-    console.log("body", req.body);
     const newUser = new User({
       username: req.body.username,
       password: req.body.password,
@@ -18,6 +17,7 @@ export default async function handler(req, res) {
       last_name: req.body.last,
       joined: new Date(),
     });
+
     newUser.save(function (err) {
       if (err) throw err;
     });
