@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const User = require("./db/models/user.js");
+const User = require("./db/models/user");
 
 export default async function handler(req, res) {
   const connection =
