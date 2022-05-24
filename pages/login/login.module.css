@@ -3,6 +3,17 @@
   height: 100vh;
 }
 .loginPage .loginSideBar {
-  width: 20vw;
+  width: 33vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.loginPage .loginForm {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
