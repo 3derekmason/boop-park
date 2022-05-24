@@ -5,6 +5,7 @@ import {
   Checkbox,
   Container,
   FormControlLabel,
+  Link,
   Paper,
   TextField,
   Typography,
@@ -67,9 +68,9 @@ const LoginPage = () => {
                 Sign In
               </Button>
             </Box>
-            <Typography component={"p"} variant="caption">
-              Not a user? Sign in here.
-            </Typography>
+            <Link href="/signup" variant="body2">
+              {"Don't have an account? Sign Up"}
+            </Link>
           </Box>
         </Paper>
       </Container>
