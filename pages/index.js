@@ -12,7 +12,7 @@ const HomePage = () => {
     if (!currentUser) {
       toLogin();
     }
-  }, [currentUser]);
+  }, [currentUser, router]);
 
   return <div className="homepage">Home Page</div>;
 };
