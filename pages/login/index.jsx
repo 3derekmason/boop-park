@@ -39,10 +39,10 @@ const LoginPage = () => {
                 margin="normal"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id="username"
+                label="Username"
+                name="username"
+                autoComplete="username"
                 autoFocus
               />
               <TextField
@@ -69,7 +69,7 @@ const LoginPage = () => {
               </Button>
             </Box>
             <Link href="/signup" variant="body2">
-              {"Don't have an account? Sign Up"}
+              {"Not a user? Sign Up"}
             </Link>
           </Box>
         </Paper>
