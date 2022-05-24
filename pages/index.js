@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import Loading from "./components/Loading";
 
 const HomePage = () => {
   const router = useRouter();
@@ -14,7 +15,7 @@ const HomePage = () => {
     }
   }, [currentUser, router]);
 
-  return <div className="homepage">Home Page</div>;
+  return !currentUser ? <Loading /> : <div className="homepage">Home Page</div>;
 };
 
 export default HomePage;
