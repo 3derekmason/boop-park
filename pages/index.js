@@ -1,10 +1,11 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import { useAppContext } from "../context/state";
 import Loading from "./components/Loading";
 
 const HomePage = () => {
   const router = useRouter();
-  const [currentUser, setCurrentUser] = useState();
+  const { currentUser } = useAppContext();
 
   useEffect(() => {
     function toLogin() {

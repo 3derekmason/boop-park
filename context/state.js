@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 const AppContext = createContext();
 
-export function AppWrapper() {
+export function AppWrapper({ children }) {
   const [currentUser, setCurrentUser] = useState();
 
   let sharedState = {
