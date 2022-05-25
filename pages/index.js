@@ -9,7 +9,7 @@ const Landing = () => {
   return !currentUser ? (
     <LoginPage />
   ) : (
-    <div className={styles.landingPage}>{JSON.stringify(currentUser)}</div>
+    <div className={styles.landingPage}>Welcome, {currentUser.username}!</div>
   );
 };
 
