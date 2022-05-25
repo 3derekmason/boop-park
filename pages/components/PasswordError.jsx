@@ -2,7 +2,16 @@ import { Typography } from "@mui/material";
 
 const PasswordError = () => {
   return (
-    <Typography style={{ color: "#d50000" }} component="p" variant="caption">
+    <Typography
+      style={{
+        width: "100%",
+        color: "#d50000",
+        textAlign: "center",
+        marginTop: "4px",
+      }}
+      component="p"
+      variant="caption"
+    >
       Passwords must match...
     </Typography>
   );
