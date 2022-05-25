@@ -18,7 +18,7 @@ const WorkoutCard = () => {
       >
         <CardMedia
           component="img"
-          image="https://source.unsplash.com/WU2TFyzKTqY"
+          image="https://source.unsplash.com/PHIgYUGQPvU"
           alt="random"
         />
         <CardContent sx={{ flexGrow: 1 }}>
