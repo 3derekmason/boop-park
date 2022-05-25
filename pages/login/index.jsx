@@ -52,7 +52,6 @@ const LoginPage = () => {
       .catch((error) => {
         console.error("Error:", error);
       });
-    console.log(currentUser);
     setFormValues(defaultValues);
     router.push("/");
   };

@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
 import { useAppContext } from "../context/state";
 import Loading from "./components/Loading";
 import LoginPage from "./login";
 
 const HomePage = () => {
-  const { currentUser, router } = useAppContext();
+  const { currentUser } = useAppContext();
   return !currentUser ? (
     <LoginPage />
   ) : (
