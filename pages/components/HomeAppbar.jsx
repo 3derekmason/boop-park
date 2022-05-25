@@ -8,8 +8,13 @@ import {
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import { useAppContext } from "../../context/state";
 
 const HomeAppBar = () => {
+  const { setCurrentUser } = useAppContext();
+  const logout = () => {
+    setCurrentUser("");
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -26,7 +31,9 @@ const HomeAppBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Welcome to Boop Park
           </Typography>
-          <Button color="inherit">Logout</Button>
+          <Button onClick={logout} color="inherit">
+            Logout
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

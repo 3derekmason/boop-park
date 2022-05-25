@@ -8,15 +8,12 @@ import styles from "./landing.module.css";
 const Landing = () => {
   const { currentUser, setCurrentUser } = useAppContext();
 
-  const logout = () => {
-    setCurrentUser("");
-  };
   return !currentUser ? (
     <LoginPage />
   ) : (
     <div className={styles.landingPage}>
       <HomeAppBar />
-      Welcome, {currentUser.username}!<Button onClick={logout}>Log out</Button>
+      Welcome, {currentUser.username}!
     </div>
   );
 };
