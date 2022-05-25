@@ -25,9 +25,6 @@ export default async function handler(req, res) {
       const id = req.query.user_id;
       const user = await User.findOne({ _id: id });
       res.status(200).send(user);
-    } else {
-      const allUsers = await User.find({});
-      res.status(200).json(allUsers);
     }
   }
 }
