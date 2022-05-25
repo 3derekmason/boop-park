@@ -18,21 +18,17 @@ const WorkoutCard = () => {
       >
         <CardMedia
           component="img"
-          image="https://source.unsplash.com/random"
+          image="https://source.unsplash.com/WU2TFyzKTqY"
           alt="random"
         />
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography gutterBottom variant="h5" component="h2">
-            Heading
+            Workout Name
           </Typography>
-          <Typography>
-            This is a media card. You can use this section to describe the
-            content.
-          </Typography>
+          <Typography>Short workout description.</Typography>
         </CardContent>
         <CardActions>
           <Button size="small">View</Button>
-          <Button size="small">Edit</Button>
         </CardActions>
       </Card>
     </Grid>
