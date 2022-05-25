@@ -11,7 +11,11 @@ const HomePage = () => {
     }
   }, [currentUser, router]);
 
-  return !currentUser ? <Loading /> : <div className="homepage">Home Page</div>;
+  return !currentUser ? (
+    <Loading />
+  ) : (
+    <div className="homepage">{JSON.stringify(currentUser)}</div>
+  );
 };
 
 export default HomePage;
