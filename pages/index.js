@@ -5,10 +5,11 @@ import HomeAppBar from "./components/HomeAppbar";
 import LoginPage from "./login";
 import styles from "./landing.module.css";
 import WorkoutCard from "./components/WorkoutCard";
+import capetilize from "../util/capetilize";
 
 const Landing = () => {
   const { currentUser, setCurrentUser } = useAppContext();
-  const cards = [1, 2, 3, 4];
+  const cards = [1, 2, 3];
   return !currentUser ? (
     <LoginPage />
   ) : (
@@ -22,7 +23,7 @@ const Landing = () => {
           color="text.primary"
           gutterBottom
         >
-          Hello, {currentUser.first_name}
+          Hello, {capetilize(currentUser.first_name)}!
         </Typography>
         <Typography
           variant="h5"
