@@ -1,12 +1,13 @@
 import { createContext, useContext, useState } from "react";
-
+import { useRouter } from "next/router";
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [currentUser, setCurrentUser] = useState();
-
+  const router = useRouter();
   let sharedState = {
     currentUser,
+    router,
   };
 
   return (
