@@ -1,13 +1,15 @@
 import { useAppContext } from "../context/state";
+
 import Loading from "./components/Loading";
 import LoginPage from "./login";
+import styles from "./landing.module.css";
 
 const Landing = () => {
   const { currentUser } = useAppContext();
   return !currentUser ? (
     <LoginPage />
   ) : (
-    <div className="homepage">{JSON.stringify(currentUser)}</div>
+    <div className={styles.landingPage}>{JSON.stringify(currentUser)}</div>
   );
 };
 

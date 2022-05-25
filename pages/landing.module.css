@@ -1,0 +1,8 @@
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  background: url("../public/assets/edgar-chaparro-_T-D4Bb-H88-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
