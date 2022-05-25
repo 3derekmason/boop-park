@@ -11,11 +11,13 @@ import {
   Container,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import PasswordError from "../components/PasswordError";
 import styles from "./signup.module.css";
+import { useAppContext } from "../../context/state";
 
 const SignUpPage = () => {
+  const { currentUser, setCurrentUser, router } = useAppContext();
   const [errMessage, toggleErrMessage] = useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,15 +28,28 @@ const SignUpPage = () => {
     } else {
       toggleErrMessage(false);
     }
-    console.log({
-      firstName: data.get("firstName"),
-      lastName: data.get("lastName"),
+    const newUser = {
+      first: data.get("firstName"),
+      last: data.get("lastName"),
       username: data.get("username"),
       password: data.get("password"),
-    });
+    };
+    fetch("/api/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newUser),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setCurrentUser(data);
+        router.push("/");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
-
-  useEffect(() => {});
 
   return (
     <div className={styles.signUpPage}>

@@ -16,15 +16,9 @@ export default async function handler(req, res) {
       last_name: req.body.last,
       joined: new Date(),
     });
-    newUser.save(function (err) {
+    await newUser.save((err) => {
       if (err) throw err;
     });
-    res.status(201).send(newUser);
-  } else {
-    if (req.query.user_id) {
-      const id = req.query.user_id;
-      const user = await User.findOne({ _id: id });
-      res.status(200).send(user);
-    }
+    res.status(200).send(newUser);
   }
 }
