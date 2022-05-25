@@ -9,3 +9,7 @@
   background-repeat: no-repeat;
   overflow: scroll;
 }
+
+.landingHeader {
+  font-size: 44px;
+}

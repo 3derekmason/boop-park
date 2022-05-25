@@ -16,8 +16,9 @@ const Landing = () => {
   ) : (
     <div className={styles.landingPage}>
       <HomeAppBar />
-      <Container className={styles.landingContainer} maxWidth="sm">
+      <Container className={styles.landingContainer} maxWidth="m">
         <Typography
+          className={styles.landingHeader}
           component="h1"
           variant="h2"
           align="center"
