@@ -7,10 +7,10 @@ import styles from "./landing.module.css";
 import WorkoutCard from "./components/WorkoutCard";
 import capetilize from "../util/capetilize";
 import getDayOfWeek from "../util/getDayOfWeek";
+import workouts from "./api/db/workouts.json";
 
 const Landing = () => {
   const { currentUser, setCurrentUser } = useAppContext();
-  const cards = [1, 2, 3];
   return !currentUser ? (
     <LoginPage />
   ) : (
@@ -38,8 +38,8 @@ const Landing = () => {
       </Container>
       <Container sx={{ py: 8 }} maxWidth="md">
         <Grid container spacing={4}>
-          {cards.map((card, i) => (
-            <WorkoutCard key={i} />
+          {workouts.map((workout, i) => (
+            <WorkoutCard key={i} data={{ workout }} />
           ))}
         </Grid>
       </Container>

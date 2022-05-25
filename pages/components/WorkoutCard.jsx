@@ -7,7 +7,7 @@ import {
   CardMedia,
   CardContent,
 } from "@mui/material";
-const WorkoutCard = () => {
+const WorkoutCard = ({ data }) => {
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Card
@@ -23,7 +23,7 @@ const WorkoutCard = () => {
         />
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography gutterBottom variant="h5" component="h2">
-            Workout Name
+            {data.workout.title}
           </Typography>
           <Typography>Short workout description.</Typography>
         </CardContent>
