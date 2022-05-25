@@ -2,7 +2,7 @@ import { useAppContext } from "../context/state";
 import Loading from "./components/Loading";
 import LoginPage from "./login";
 
-const HomePage = () => {
+const Landing = () => {
   const { currentUser } = useAppContext();
   return !currentUser ? (
     <LoginPage />
@@ -11,4 +11,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Landing;

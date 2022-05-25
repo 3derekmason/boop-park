@@ -2,10 +2,7 @@
 
 module.exports = {
   async redirects() {
-    return [
-      { source: "/login", destination: "/login", permanent: true },
-      { source: "/", destination: "/", permanent: true },
-    ];
+    return [{ source: "/login", destination: "/login", permanent: true }];
   },
   nextConfig: {
     reactStrictMode: true,
