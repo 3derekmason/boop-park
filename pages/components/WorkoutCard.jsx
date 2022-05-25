@@ -22,7 +22,7 @@ const WorkoutCard = ({ data }) => {
           alt="random"
         />
         <CardContent sx={{ flexGrow: 1 }}>
-          {data.workout && (
+          {data && (
             <Typography gutterBottom variant="h5" component="h2">
               {data.workout.title}
             </Typography>
