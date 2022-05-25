@@ -6,6 +6,7 @@ import LoginPage from "./login";
 import styles from "./landing.module.css";
 import WorkoutCard from "./components/WorkoutCard";
 import capetilize from "../util/capetilize";
+import getDayOfWeek from "../util/getDayOfWeek";
 
 const Landing = () => {
   const { currentUser, setCurrentUser } = useAppContext();
@@ -23,7 +24,8 @@ const Landing = () => {
           color="text.primary"
           gutterBottom
         >
-          Hello, {capetilize(currentUser.first_name)}!
+          Happy {getDayOfWeek()},{" "}
+          {capetilize(currentUser.first_name ? currentUser.first_name : "")}!
         </Typography>
         <Typography
           variant="h5"
