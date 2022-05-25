@@ -11,11 +11,34 @@ import {
   Typography,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-
 import styles from "./login.module.css";
+import { useAppContext } from "../../context/state";
+import { useState } from "react";
+
 const LoginPage = () => {
-  const handleSubmit = () => {
-    console.log("Submit :)");
+  const { currentUser } = useAppContext;
+  const defaultValues = {
+    username: "",
+    password: "",
+  };
+  const [formValues, setFormValues] = useState(defaultValues);
+
+  const handleInputChange = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const user = {
+      username: formValues.username,
+      password: formValues.password,
+    };
+    console.log(user);
   };
 
   return (
@@ -43,6 +66,8 @@ const LoginPage = () => {
                 label="Username"
                 name="username"
                 autoComplete="username"
+                value={formValues.username}
+                onChange={handleInputChange}
                 autoFocus
               />
               <TextField
@@ -54,6 +79,8 @@ const LoginPage = () => {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                value={formValues.password}
+                onChange={handleInputChange}
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
