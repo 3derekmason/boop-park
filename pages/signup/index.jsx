@@ -11,7 +11,8 @@ import {
   Container,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import PasswordError from "../components/PasswordError";
 
 const SignUpPage = () => {
   const [errMessage, toggleErrMessage] = useState(false);
@@ -19,7 +20,10 @@ const SignUpPage = () => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     if (data.get("password") !== data.get("verifyPassword")) {
-      return toggleErrMessage(true);
+      toggleErrMessage(true);
+      return;
+    } else {
+      toggleErrMessage(false);
     }
     console.log({
       username: data.get("username"),
@@ -27,6 +31,8 @@ const SignUpPage = () => {
       verify: data.get("verifyPassword"),
     });
   };
+
+  useEffect(() => {});
 
   return (
     <Container component="main" maxWidth="xs">
@@ -77,7 +83,7 @@ const SignUpPage = () => {
                 id="verifyPassword"
               />
             </Grid>
-            {errMessage ? "Passwords must match" : ""}
+            {errMessage ? <PasswordError /> : ""}
           </Grid>
           <Button
             type="submit"
