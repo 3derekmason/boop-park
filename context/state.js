@@ -7,6 +7,7 @@ export function AppWrapper({ children }) {
   const router = useRouter();
   let sharedState = {
     currentUser,
+    setCurrentUser,
     router,
   };
 

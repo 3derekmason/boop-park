@@ -16,7 +16,7 @@ import { useAppContext } from "../../context/state";
 import { useState } from "react";
 
 const LoginPage = () => {
-  const { currentUser } = useAppContext;
+  const { currentUser, setCurrentUser } = useAppContext;
   const defaultValues = {
     username: "",
     password: "",
@@ -38,7 +38,23 @@ const LoginPage = () => {
       username: formValues.username,
       password: formValues.password,
     };
-    console.log(user);
+    // fetch("/login", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(user),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     setCurrentUser(data);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error:", error);
+    //   });
+
+    // setFormValues(defaultValues);
+    // console.log(currentUser);
   };
 
   return (
