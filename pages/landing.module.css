@@ -1,4 +1,6 @@
 .landingPage {
+  box-sizing: border-box;
+  padding-top: 64px;
   width: 100vw;
   height: 100vh;
   background: url("../public/assets/edgar-chaparro-_T-D4Bb-H88-unsplash.jpg");
