@@ -33,7 +33,7 @@ const WorkoutCard = ({ data }) => {
             >
               {data?.workout?.title}
             </Typography>
-            <Typography sx={{ fontWeight: 200, textAlign: "center" }}>
+            <Typography sx={{ fontWeight: 200, textAlign: "left" }}>
               {data?.workout?.desc}
             </Typography>
           </CardContent>

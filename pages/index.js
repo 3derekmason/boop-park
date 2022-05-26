@@ -28,7 +28,12 @@ const Landing = () => {
           Happy {getDayOfWeek()},{" "}
           {capetilize(currentUser.first_name ? currentUser.first_name : "")}!
         </Typography>
-        <Typography component="p" variant="h5" align="center">
+        <Typography
+          component="p"
+          variant="h5"
+          align="center"
+          style={{ width: "100%" }}
+        >
           Choose a training program below to get started.
         </Typography>
       </Container>
