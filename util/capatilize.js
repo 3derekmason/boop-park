@@ -1,4 +1,4 @@
-export default function capetilize(string) {
+export default function capatilize(string) {
   if (!string) {
     return;
   }

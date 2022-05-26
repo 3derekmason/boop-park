@@ -5,7 +5,7 @@ import HomeAppBar from "./components/HomeAppbar";
 import LoginPage from "./login";
 import styles from "./landing.module.css";
 import WorkoutCard from "./components/WorkoutCard";
-import capetilize from "../util/capetilize";
+import capatilize from "../util/capatilize";
 import getDayOfWeek from "../util/getDayOfWeek";
 import workouts from "./api/db/workouts.json";
 
@@ -25,8 +25,7 @@ const Landing = () => {
           // color="text.primary"
           gutterBottom
         >
-          Happy {getDayOfWeek()},{" "}
-          {capetilize(currentUser.first_name ? currentUser.first_name : "")}!
+          Happy {getDayOfWeek()}, {capatilize(currentUser?.first_name)}!
         </Typography>
         <Typography
           component="p"
