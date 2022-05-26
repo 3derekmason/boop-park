@@ -2,6 +2,7 @@ import {
   Container,
   CardMedia,
   Button,
+  Grid,
   Paper,
   Typography,
   Modal,
@@ -25,27 +26,31 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
             alt={`${workout?.title} image`}
             height="160"
           />
-          <Typography component="h2" variant="h3">
-            {workout?.title}
-          </Typography>
-          <Typography component="p" variant="body1">
-            {workout?.desc}
-          </Typography>
-          {/* Equipment */}
-          <div className={styles.equipment}>
-            <Typography component="h3" variant="subtitle1">
-              Equipment needed:
+          <div className={styles.modalBody}>
+            <Typography component="h2" variant="h3">
+              {workout?.title}
             </Typography>
-            <Typography component="p" variant="body2">
-              {JSON.stringify(workout?.equipment)}
+            <Typography component="p" variant="body1">
+              {workout?.desc}
             </Typography>
+            {/* Equipment */}
+            <div className={styles.equipment}>
+              <Typography component="h3" variant="subtitle1">
+                Equipment needed:
+              </Typography>
+              <Typography component="p" variant="body2">
+                {JSON.stringify(workout?.equipment)}
+              </Typography>
+            </div>
           </div>
-          <Typography component="p" variant="caption">
-            Estimated time: {workout?.estTime}
-          </Typography>
-          <Button variant="contained" color="secondary">
-            Begin
-          </Button>
+          <div className={styles.timeAndSubmit}>
+            <Typography component="p" variant="caption">
+              Estimated time: {workout?.estTime}
+            </Typography>
+            <Button fullWidth variant="contained" color="secondary">
+              Begin
+            </Button>
+          </div>
         </Paper>
       </Container>
     </Modal>
