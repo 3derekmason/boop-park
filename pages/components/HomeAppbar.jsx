@@ -6,7 +6,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-
+import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useAppContext } from "../../context/state";
 
@@ -17,7 +17,7 @@ const HomeAppBar = () => {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" color={primary.lighter}>
         <Toolbar>
           <IconButton
             size="large"
@@ -26,7 +26,7 @@ const HomeAppBar = () => {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <SportsBasketballIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Welcome to Boop Park
