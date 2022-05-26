@@ -17,7 +17,7 @@ const HomeAppBar = () => {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" color={primary.lighter}>
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton
             size="large"

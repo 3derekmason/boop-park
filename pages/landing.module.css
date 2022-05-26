@@ -13,3 +13,25 @@
 .landingHeader {
   font-size: 44px;
 }
+
+.headerContainer {
+  padding: 0;
+  color: #fefefe;
+  width: 80%;
+  background: #0d478190;
+  backdrop-filter: blur(15);
+  border-radius: 4px;
+  animation: fade 1s;
+}
+.headerContainer p {
+  background: #0d478150;
+  color: #e3f2fd;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -16,19 +16,19 @@ const Landing = () => {
   ) : (
     <div className={styles.landingPage}>
       <HomeAppBar />
-      <Container className={styles.landingContainer} maxWidth="m">
+      <Container className={styles.headerContainer} maxWidth="m">
         <Typography
           className={styles.landingHeader}
           component="h1"
           variant="h2"
           align="center"
-          color="text.primary"
+          // color="text.primary"
           gutterBottom
         >
           Happy {getDayOfWeek()},{" "}
           {capetilize(currentUser.first_name ? currentUser.first_name : "")}!
         </Typography>
-        <Typography variant="h5" align="center" color="text.secondary">
+        <Typography component="p" variant="h5" align="center">
           Choose a training program below to get started.
         </Typography>
       </Container>
