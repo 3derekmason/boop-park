@@ -21,7 +21,7 @@ const WorkoutCard = ({ data }) => {
         >
           <CardMedia
             component="img"
-            image="https://source.unsplash.com/PHIgYUGQPvU"
+            image={data?.workout?.img}
             alt={`${data?.workout?.title} image`}
           />
           <CardContent sx={{ flexGrow: 1 }}>
