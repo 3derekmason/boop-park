@@ -27,9 +27,9 @@ const WorkoutCard = ({ data }) => {
           </Typography>
           <Typography>{data?.workout?.desc}</Typography>
         </CardContent>
-        <CardActions>
+        {/* <CardActions>
           <Button size="small">View</Button>
-        </CardActions>
+        </CardActions> */}
       </Card>
     </Grid>
   );
