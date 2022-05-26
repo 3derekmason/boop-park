@@ -30,6 +30,14 @@
   display: flex;
   margin-left: 24px;
 }
+
+.levelRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 .timeAndSubmit {
   width: 100%;
   display: flex;
