@@ -25,6 +25,11 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
 
   return (
     <Modal
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
       open={open}
       onClose={handleClose}
       aria-labelledby="modal-modal-title"
