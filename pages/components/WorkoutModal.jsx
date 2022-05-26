@@ -15,12 +15,21 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
           <Typography component="h2" variant="h3">
             {workout?.title}
           </Typography>
-          <Typography component="h3" variant="subtitle1">
-            Equipment needed:
+          <Typography component="p" variant="body1">
+            {workout?.desc}
           </Typography>
-          <Typography component="p" variant="body2">
-            {JSON.stringify(workout?.equipment)}
-          </Typography>
+          {/* Equipment */}
+          <div>
+            <Typography component="h3" variant="subtitle1">
+              Equipment needed:
+            </Typography>
+            <Typography component="p" variant="body2">
+              {JSON.stringify(workout?.equipment)}
+            </Typography>
+          </div>
+          <div>
+            <Button variant="contained">Begin</Button>
+          </div>
         </Paper>
       </Container>
     </Modal>
