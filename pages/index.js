@@ -11,7 +11,7 @@ import workouts from "./api/db/workouts.json";
 
 const Landing = () => {
   const { currentUser, setCurrentUser } = useAppContext();
-  return !currentUser ? (
+  return !currentUser?.username ? (
     <LoginPage />
   ) : (
     <div className={styles.landingPage}>
