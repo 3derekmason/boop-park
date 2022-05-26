@@ -11,7 +11,17 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
       aria-describedby="modal-modal-description"
     >
       <Container className={styles.modalContainer} maxWidth={"sm"}>
-        <Paper className={styles.workoutModal} elevation={3}></Paper>
+        <Paper className={styles.workoutModal} elevation={3}>
+          <Typography component="h2" variant="h3">
+            {workout?.title}
+          </Typography>
+          <Typography component="h3" variant="subtitle1">
+            Equipment needed:
+          </Typography>
+          <Typography component="p" variant="body2">
+            {JSON.stringify(workout?.equipment)}
+          </Typography>
+        </Paper>
       </Container>
     </Modal>
   );
