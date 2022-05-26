@@ -1,6 +1,7 @@
 .workoutCard {
   background: #f4f3fe;
   cursor: pointer;
+  overflow: scroll;
 }
 .workoutCard:hover {
   background: #fff;
