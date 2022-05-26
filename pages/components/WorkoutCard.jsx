@@ -56,7 +56,7 @@ const WorkoutCard = ({ data }) => {
         </Button>
       </Grid>
       <WorkoutModal
-        workout={data.workout}
+        workout={data?.workout}
         open={open}
         handleClose={handleClose}
       />
