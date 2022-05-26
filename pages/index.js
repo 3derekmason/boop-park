@@ -28,16 +28,11 @@ const Landing = () => {
           Happy {getDayOfWeek()},{" "}
           {capetilize(currentUser.first_name ? currentUser.first_name : "")}!
         </Typography>
-        <Typography
-          variant="h5"
-          align="center"
-          color="text.secondary"
-          paragraph
-        >
+        <Typography variant="h5" align="center" color="text.secondary">
           Choose a training program below to get started.
         </Typography>
       </Container>
-      <Container sx={{ py: 8 }} maxWidth="md">
+      <Container sx={{ py: 4 }} maxWidth="md">
         <Grid container spacing={4}>
           {workouts.map((workout, i) => (
             <WorkoutCard key={i} data={{ workout }} />
