@@ -44,9 +44,9 @@ const Landing = () => {
         </Grid>
       </Container>
       <Typography
+        color="primary"
         style={{
           textAlign: "center",
-          color: "#ffffff",
           letterSpacing: "2px",
           fontWeight: 200,
           padding: "16px",
