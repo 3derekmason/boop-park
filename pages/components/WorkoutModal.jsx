@@ -85,6 +85,9 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
             <Button fullWidth variant="contained" color="secondary">
               Begin
             </Button>
+            <Button onClick={handleClose} style={{ color: "#B71C1C" }}>
+              Back
+            </Button>
           </div>
         </Paper>
       </Container>
