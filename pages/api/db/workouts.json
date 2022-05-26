@@ -1,32 +1,32 @@
 [
   {
     "title": "Agility",
-    "desc": "Agility Workout",
+    "desc": "Agility workout description...",
     "img": "https://source.unsplash.com/WU2TFyzKTqY"
   },
   {
     "title": "Mobility",
-    "desc": "Mobility Workout",
+    "desc": "Mobility workout description...",
     "img": "https://source.unsplash.com/k1KCiRaDQhs"
   },
   {
     "title": "Stability",
-    "desc": "Stabilization Workout",
+    "desc": "Stabilization workout description...",
     "img": "https://source.unsplash.com/ra7gJbmr2Rg"
   },
   {
     "title": "Strength",
-    "desc": "Strength Workout",
+    "desc": "Strength workout description...",
     "img": "https://source.unsplash.com/29XohzkscAM"
   },
   {
     "title": "Quickness",
-    "desc": "Quickness Workout",
+    "desc": "Quickness workout description...",
     "img": "https://source.unsplash.com/PHIgYUGQPvU"
   },
   {
     "title": "Vertical",
-    "desc": "Vertical Workout",
+    "desc": "Vertical workout description...",
     "img": "https://source.unsplash.com/wy_L8W0zcpI"
   }
 ]

@@ -27,6 +27,7 @@ const WorkoutCard = ({ data }) => {
             sx={{
               display: "flex",
               flexDirection: "column",
+              height: "320px",
             }}
             className={styles.workoutCard}
           >
