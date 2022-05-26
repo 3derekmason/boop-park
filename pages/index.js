@@ -43,6 +43,19 @@ const Landing = () => {
           ))}
         </Grid>
       </Container>
+      <Typography
+        style={{
+          textAlign: "center",
+          color: "#ffffff",
+          letterSpacing: "2px",
+          fontWeight: 200,
+          padding: "16px",
+        }}
+        component="p"
+        variant="caption"
+      >
+        Boop Park is a part of Sadies Gym, est. 2022
+      </Typography>
     </div>
   );
 };
