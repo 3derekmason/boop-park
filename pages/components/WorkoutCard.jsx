@@ -22,12 +22,10 @@ const WorkoutCard = ({ data }) => {
           alt="random"
         />
         <CardContent sx={{ flexGrow: 1 }}>
-          {data && (
-            <Typography gutterBottom variant="h5" component="h2">
-              {data.workout.title}
-            </Typography>
-          )}
-          <Typography>Short workout description.</Typography>
+          <Typography gutterBottom variant="h5" component="h2">
+            {data?.workout?.title}
+          </Typography>
+          <Typography>{data?.workout?.desc}</Typography>
         </CardContent>
         <CardActions>
           <Button size="small">View</Button>

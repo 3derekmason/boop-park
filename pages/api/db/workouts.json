@@ -1,7 +1,8 @@
 [
-  { "title": "Agility" },
-  { "title": "Mobility" },
-  { "title": "Strength" },
-  { "title": "Quickness" },
-  { "title": "Vertical" }
+  { "title": "Agility", "desc": "Agility Workout" },
+  { "title": "Mobility", "desc": "Mobility Workout" },
+  { "title": "Stability", "desc": "Stabilization Workout" },
+  { "title": "Strength", "desc": "Strength Workout" },
+  { "title": "Quickness", "desc": "Quickness Workout" },
+  { "title": "Vertical", "desc": "Vertical Workout" }
 ]
