@@ -11,7 +11,7 @@ import styles from "./workoutCard.module.css";
 const WorkoutCard = ({ data }) => {
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <Button style={{ textTransform: "none" }}>
+      <Button style={{ textTransform: "none", textAlign: "left" }}>
         <Card
           sx={{
             display: "flex",
@@ -33,7 +33,7 @@ const WorkoutCard = ({ data }) => {
             >
               {data?.workout?.title}
             </Typography>
-            <Typography sx={{ fontWeight: 500 }}>
+            <Typography sx={{ fontWeight: 200, textAlign: "center" }}>
               {data?.workout?.desc}
             </Typography>
           </CardContent>
