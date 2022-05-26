@@ -7,6 +7,7 @@ import {
   CardMedia,
   CardContent,
 } from "@mui/material";
+import styles from "./workoutCard.module.css";
 const WorkoutCard = ({ data }) => {
   return (
     <Grid item xs={12} sm={6} md={4}>
@@ -15,6 +16,7 @@ const WorkoutCard = ({ data }) => {
           display: "flex",
           flexDirection: "column",
         }}
+        className={styles.workoutCard}
       >
         <CardMedia
           component="img"
