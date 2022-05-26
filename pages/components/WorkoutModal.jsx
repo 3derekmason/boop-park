@@ -1,5 +1,6 @@
 import { Container, Button, Paper, Typography, Modal } from "@mui/material";
 import { useState } from "react";
+import styles from "./workoutModal.module.css";
 
 const WorkoutModal = ({ workout, open, handleClose }) => {
   return (
@@ -9,8 +10,8 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
-      <Container maxWidth={"sm"}>
-        <Paper elevation={3} style={{ width: "100%", height: "50%" }}></Paper>
+      <Container className={styles.modalContainer} maxWidth={"sm"}>
+        <Paper className={styles.workoutModal} elevation={3}></Paper>
       </Container>
     </Modal>
   );

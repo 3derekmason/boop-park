@@ -1,0 +1,12 @@
+.modalContainer {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workoutModal {
+  width: 100%;
+  height: 80%;
+}
