@@ -5,6 +5,7 @@
     "img": "https://source.unsplash.com/WU2TFyzKTqY",
     "levels": [{ "level": 1 }, { "level": 2 }],
     "equipment": ["Cones (optional)"],
+    "estTime": "10-15 minutes",
     "exercises": [{ "name": "Lateral Lunge", "sets": [8, 8, 8] }]
   },
   {
@@ -12,6 +13,7 @@
     "desc": "Train for comfort and injury prevention.",
     "img": "https://source.unsplash.com/k1KCiRaDQhs",
     "equipment": ["Mat (optional)"],
+    "estTime": "10-12 minutes",
     "levels": [{ "level": 1 }, { "level": 2 }]
   },
   {
@@ -19,6 +21,7 @@
     "desc": "Train for a more balanced life.",
     "img": "https://source.unsplash.com/ra7gJbmr2Rg",
     "equipment": ["None!"],
+    "estTime": "8-10 minutes",
     "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
   },
   {
@@ -26,6 +29,7 @@
     "desc": "Train for a stronger body and mind.",
     "img": "https://source.unsplash.com/29XohzkscAM",
     "equipment": ["None!"],
+    "estTime": "20-25 minutes",
     "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
   },
   {
@@ -33,6 +37,7 @@
     "desc": "Train your critical speed skills.",
     "img": "https://source.unsplash.com/PHIgYUGQPvU",
     "equipment": ["Cones (optional)", "Jump rope"],
+    "estTime": "10-15 minutes",
     "levels": [{ "level": 1 }, { "level": 2 }]
   },
   {
@@ -40,6 +45,7 @@
     "desc": "Training with mostly a lot of jumping.",
     "img": "https://source.unsplash.com/wy_L8W0zcpI",
     "equipment": ["Box / Park Bench", "Jump rope"],
+    "estTime": "15-20 minutes",
     "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
   }
 ]

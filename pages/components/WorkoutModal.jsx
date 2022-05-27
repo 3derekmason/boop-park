@@ -103,7 +103,7 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
           </div>
           <div className={styles.timeAndSubmit}>
             <Typography component="p" variant="caption">
-              Estimated time: {workout?.level?.estTime || "n/a"}
+              Estimated time: {workout?.estTime || "n/a"}
             </Typography>
 
             <Button
