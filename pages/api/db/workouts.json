@@ -3,10 +3,21 @@
     "title": "Agility",
     "desc": "Train for better reflexes and speed.",
     "img": "https://source.unsplash.com/WU2TFyzKTqY",
-    "levels": [{ "level": 1 }, { "level": 2 }],
+    "levels": [
+      {
+        "level": 1,
+        "exercises": [
+          {
+            "name": "Lateral Lunge",
+            "sets": "Three sets of 8 (4 each direction)",
+            "pics": ["https://source.unsplash.com/WU2TFyzKTqY"]
+          }
+        ]
+      },
+      { "level": 2 }
+    ],
     "equipment": ["Cones (optional)"],
-    "estTime": "10-15 minutes",
-    "exercises": [{ "name": "Lateral Lunge", "sets": [8, 8, 8] }]
+    "estTime": "10-15 minutes"
   },
   {
     "title": "Mobility",

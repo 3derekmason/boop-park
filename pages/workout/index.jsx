@@ -1,10 +1,22 @@
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  CardMedia,
+  Container,
+  Stack,
+  Typography,
+} from "@mui/material";
 import { useAppContext } from "../../context/state";
+import { useState } from "react";
 import styles from "./workout.module.css";
 import HomeAppBar from "../components/HomeAppbar";
 
 const WorkoutPage = () => {
   const { currentWorkout, setCurrentWorkout, router } = useAppContext();
+  const [currentExercise, setCurrentExercise] = useState(
+    currentWorkout?.rx?.exercises[0]
+  );
+  console.log(currentWorkout);
   return (
     <div className={styles.workoutPage}>
       <HomeAppBar />
@@ -21,6 +33,16 @@ const WorkoutPage = () => {
         <Typography variant="h5" align="center" color="secondary" paragraph>
           Level {currentWorkout?.rx?.level}
         </Typography>
+
+        {JSON.stringify(currentExercise?.name) || ""}
+        <CardMedia
+          component="img"
+          image={currentExercise?.pics[0]}
+          alt={`${currentExercise?.name} image`}
+          height="240"
+        />
+        {JSON.stringify(currentExercise?.sets) || ""}
+
         <Stack
           sx={{ pt: 4 }}
           direction="row"
