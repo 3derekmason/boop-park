@@ -4,7 +4,7 @@ import styles from "./workout.module.css";
 import HomeAppBar from "../components/HomeAppbar";
 
 const WorkoutPage = () => {
-  const { currentWorkout, setCurrentWorkout } = useAppContext();
+  const { currentWorkout, setCurrentWorkout, router } = useAppContext();
   return (
     <div className={styles.workoutPage}>
       <HomeAppBar />
@@ -27,7 +27,14 @@ const WorkoutPage = () => {
           spacing={2}
           justifyContent="center"
         >
-          <Button variant="contained">Back to Home</Button>
+          <Button
+            onClick={() => {
+              router.push("/");
+            }}
+            variant="contained"
+          >
+            Back to Home
+          </Button>
           <Button variant="outlined">Next</Button>
         </Stack>
       </Box>

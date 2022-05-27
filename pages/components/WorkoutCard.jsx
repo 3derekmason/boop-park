@@ -49,9 +49,6 @@ const WorkoutCard = ({ data }) => {
                 {data?.workout?.desc}
               </Typography>
             </CardContent>
-            {/* <CardActions>
-          <Button size="small">View</Button>
-        </CardActions> */}
           </Card>
         </Button>
       </Grid>
