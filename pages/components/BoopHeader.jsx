@@ -4,12 +4,7 @@ import styles from "./boopHeader.module.css";
 
 const BoopHeader = () => {
   return (
-    <Typography
-      className={styles.header}
-      component="h1"
-      variant="caption"
-      color="secondary"
-    >
+    <Typography className={styles.header} component="h1" color="secondary">
       Boop <SportsBasketballIcon className={styles.icon} /> Park
     </Typography>
   );
