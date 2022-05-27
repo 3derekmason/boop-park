@@ -24,7 +24,6 @@
   animation: fade 1s;
 }
 .headerContainer p {
-  background: #0d478150;
   color: #e3f2fd;
 }
 @keyframes fade {
