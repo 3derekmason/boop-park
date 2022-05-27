@@ -10,12 +10,12 @@ import {
 } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./workoutModal.module.css";
 
 const WorkoutModal = ({ workout, open, handleClose }) => {
-  const levels = [1, 2, 3];
-  const [chosenLevel, setChosenLevel] = useState(levels[0]);
+  const availableLevels = workout?.levels;
+  const [chosenLevel, setChosenLevel] = useState(availableLevels[0]?.level);
   const levelUp = () => {
     setChosenLevel(chosenLevel + 1);
   };
@@ -65,7 +65,7 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
               Choose Level:
             </Typography>
             <IconButton
-              disabled={chosenLevel === levels[0]}
+              disabled={chosenLevel === availableLevels?.[0].level}
               aria-label="previous"
               onClick={levelDown}
             >
@@ -75,7 +75,10 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
               {chosenLevel}
             </Typography>
             <IconButton
-              disabled={chosenLevel === levels[levels.length - 1]}
+              disabled={
+                chosenLevel ===
+                availableLevels?.[availableLevels.length - 1].level
+              }
               aria-label="previous"
               onClick={levelUp}
             >
