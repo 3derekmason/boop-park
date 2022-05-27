@@ -60,12 +60,16 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
             </Typography>
             {/* Equipment */}
             <div className={styles.equipment}>
-              <Typography component="h3" variant="subtitle1">
+              <Typography component="h3" variant="subtitle1" color="secondary">
                 Equipment needed:
               </Typography>
-              <Typography component="p" variant="body2">
-                {JSON.stringify(workout?.equipment)}
-              </Typography>
+              {workout?.equipment.map((item, i) => {
+                return (
+                  <Typography key={i} component="p" variant="caption">
+                    {item}
+                  </Typography>
+                );
+              })}
             </div>
           </div>
           <div className={styles.levelRow}>

@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: scroll;
   gap: 16px;
   animation: slideUp 0.2s;
 }
@@ -30,6 +31,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  gap: 8px;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -37,11 +39,16 @@
 .equipment {
   width: 95%;
   display: flex;
-  margin-left: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
 }
 
 .levelRow {
-  width: 100%;
+  width: 64%;
+  background: #67a09b50;
+  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
