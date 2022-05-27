@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import styles from "./login.module.css";
+import BoopHeader from "../components/BoopHeader";
 import { useAppContext } from "../../context/state";
 import { useState } from "react";
 
@@ -61,6 +62,7 @@ const LoginPage = () => {
       <Container component="main" maxWidth="xs">
         <Paper elevation={4} className={styles.loginSideBar}>
           <Box className={styles.loginForm}>
+            <BoopHeader />
             <Avatar sx={{ m: 1 }}>
               <LockOutlinedIcon color="neutral" />
             </Avatar>
