@@ -20,8 +20,8 @@
   height: calc(100vh - 64px);
 }
 
-@media (max-width: 639) {
-  .workoutContainer {
-    width: 95%;
+@media screen and (max-width: 600px) {
+  .workoutPage .workoutContainer {
+    width: 95vw;
   }
 }

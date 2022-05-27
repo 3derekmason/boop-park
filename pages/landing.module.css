@@ -34,3 +34,12 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .headerContainer h1 {
+    font-size: 24px;
+  }
+  .headerContainer p {
+    font-size: 16px;
+  }
+}
