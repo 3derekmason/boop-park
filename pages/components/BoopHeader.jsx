@@ -1,20 +1,16 @@
 import { Typography } from "@mui/material";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import styles from "./boopHeader.module.css";
 
 const BoopHeader = () => {
   return (
     <Typography
+      className={styles.header}
       component="h1"
       variant="caption"
       color="secondary"
-      style={{
-        fontSize: "40px",
-        marginBottom: "40px",
-        display: "flex",
-        alignItems: "center",
-      }}
     >
-      Boop <SportsBasketballIcon style={{ fontSize: "40px" }} /> Park
+      Boop <SportsBasketballIcon className={styles.icon} /> Park
     </Typography>
   );
 };
