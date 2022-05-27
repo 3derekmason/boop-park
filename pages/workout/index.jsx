@@ -10,14 +10,17 @@ import { useAppContext } from "../../context/state";
 import { useState } from "react";
 import styles from "./workout.module.css";
 import HomeAppBar from "../components/HomeAppbar";
+import LoginPage from "../login";
 
 const WorkoutPage = () => {
-  const { currentWorkout, setCurrentWorkout, router } = useAppContext();
+  const { currentWorkout, setCurrentWorkout, router, currentUser } =
+    useAppContext();
   const [currentExercise, setCurrentExercise] = useState(
-    currentWorkout?.rx?.exercises[0]
+    currentWorkout?.rx?.exercises?.[0]
   );
-  console.log(currentWorkout);
-  return (
+  return !currentUser.username ? (
+    <LoginPage />
+  ) : (
     <div className={styles.workoutPage}>
       <HomeAppBar />
       <Box className={styles.workoutContainer}>
@@ -37,7 +40,7 @@ const WorkoutPage = () => {
         {JSON.stringify(currentExercise?.name) || ""}
         <CardMedia
           component="img"
-          image={currentExercise?.pics[0]}
+          image={currentExercise?.pics?.[0] || ""}
           alt={`${currentExercise?.name} image`}
           height="240"
         />
