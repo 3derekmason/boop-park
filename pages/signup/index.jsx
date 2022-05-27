@@ -14,6 +14,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useState } from "react";
 import PasswordError from "../components/PasswordError";
 import styles from "./signup.module.css";
+import BoopHeader from "../components/BoopHeader";
 import { useAppContext } from "../../context/state";
 
 const SignUpPage = () => {
@@ -55,8 +56,9 @@ const SignUpPage = () => {
     <div className={styles.signUpPage}>
       <Container component="div" maxWidth="xs">
         <Box className={styles.signUpForm}>
+          <BoopHeader />
           <Avatar>
-            <LockOutlinedIcon />
+            <LockOutlinedIcon color="primary" />
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign up
