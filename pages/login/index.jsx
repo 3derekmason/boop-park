@@ -63,9 +63,9 @@ const LoginPage = () => {
         <Paper elevation={4} className={styles.loginSideBar}>
           <Box className={styles.loginForm}>
             <BoopHeader />
-            {/* <Avatar sx={{ m: 1 }}>
+            <Avatar sx={{ m: 1 }}>
               <LockOutlinedIcon color="neutral" />
-            </Avatar> */}
+            </Avatar>
             <Typography component="h1" variant="h5">
               Sign in
             </Typography>
