@@ -22,7 +22,7 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
   const [chosenLevelIndex, setChosenLevelIndex] = useState(0);
 
   const handleWorkoutChange = (index) => {
-    setCurrentWorkout(workout?.levels[index]);
+    setCurrentWorkout({ title: workout?.title, rx: workout?.levels[index] });
   };
   const levelUp = () => {
     setChosenLevelIndex(chosenLevelIndex + 1);
