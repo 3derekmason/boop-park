@@ -17,8 +17,11 @@
 .header .icon {
   font-size: 60px;
 }
-@media (max-width: 800px) {
+@media (max-width: 669px) {
+  .header {
+    font-size: 40px;
+  }
   .header .icon {
-    font-size: 80px;
+    font-size: 40px;
   }
 }
