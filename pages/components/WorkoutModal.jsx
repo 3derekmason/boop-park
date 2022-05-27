@@ -16,7 +16,7 @@ import styles from "./workoutModal.module.css";
 
 const WorkoutModal = ({ workout, open, handleClose }) => {
   const availableLevels = workout?.levels;
-  const { currentWorkout, setCurrentWorkout } = useAppContext(
+  const { currentWorkout, setCurrentWorkout, router } = useAppContext(
     workout?.levels?.[0]
   );
   const [chosenLevelIndex, setChosenLevelIndex] = useState(0);
@@ -106,9 +106,9 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
               fullWidth
               variant="contained"
               color="secondary"
-              onClick={async () => {
-                console.log(workout?.levels[chosenLevelIndex]);
-                await handleWorkoutChange(chosenLevelIndex);
+              onClick={() => {
+                handleWorkoutChange(chosenLevelIndex);
+                router.push("/workout");
               }}
             >
               Begin
