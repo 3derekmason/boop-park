@@ -11,16 +11,24 @@ import {
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useEffect, useState } from "react";
+import { useAppContext } from "../../context/state";
 import styles from "./workoutModal.module.css";
 
 const WorkoutModal = ({ workout, open, handleClose }) => {
   const availableLevels = workout?.levels;
-  const [chosenLevel, setChosenLevel] = useState(availableLevels[0]?.level);
+  const { currentWorkout, setCurrentWorkout } = useAppContext(
+    workout?.levels?.[0]
+  );
+  const [chosenLevelIndex, setChosenLevelIndex] = useState(0);
+
+  const handleWorkoutChange = (index) => {
+    setCurrentWorkout(workout?.levels[index]);
+  };
   const levelUp = () => {
-    setChosenLevel(chosenLevel + 1);
+    setChosenLevelIndex(chosenLevelIndex + 1);
   };
   const levelDown = () => {
-    setChosenLevel(chosenLevel - 1);
+    setChosenLevelIndex(chosenLevelIndex - 1);
   };
 
   return (
@@ -65,22 +73,26 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
               Choose Level:
             </Typography>
             <IconButton
-              disabled={chosenLevel === availableLevels?.[0].level}
+              disabled={chosenLevelIndex === 0}
               aria-label="previous"
-              onClick={levelDown}
+              onClick={() => {
+                levelDown();
+              }}
             >
               <ArrowBackIosIcon />
             </IconButton>
             <Typography component="h4" variant="h5" color="primary">
-              {chosenLevel}
+              {chosenLevelIndex + 1}
             </Typography>
             <IconButton
               disabled={
-                chosenLevel ===
-                availableLevels?.[availableLevels.length - 1].level
+                chosenLevelIndex ===
+                availableLevels?.[availableLevels.length - 1].level - 1
               }
               aria-label="previous"
-              onClick={levelUp}
+              onClick={() => {
+                levelUp();
+              }}
             >
               <ArrowForwardIosIcon />
             </IconButton>
@@ -90,7 +102,15 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
               Estimated time: {workout?.level?.estTime || "n/a"}
             </Typography>
 
-            <Button fullWidth variant="contained" color="secondary">
+            <Button
+              fullWidth
+              variant="contained"
+              color="secondary"
+              onClick={async () => {
+                console.log(workout?.levels[chosenLevelIndex]);
+                await handleWorkoutChange(chosenLevelIndex);
+              }}
+            >
               Begin
             </Button>
             <Button onClick={handleClose} style={{ color: "#B71C1C" }}>

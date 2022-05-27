@@ -4,11 +4,14 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [currentUser, setCurrentUser] = useState();
+  const [currentWorkout, setCurrentWorkout] = useState();
   const router = useRouter();
   let sharedState = {
     currentUser,
     setCurrentUser,
     router,
+    currentWorkout,
+    setCurrentWorkout,
   };
 
   return (
