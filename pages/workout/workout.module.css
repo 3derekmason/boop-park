@@ -1,0 +1,14 @@
+.workoutPage {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 64px;
+  background: #212121;
+  display: grid;
+  place-content: center;
+}
+
+.workoutPage .workoutContainer {
+  background: #fefefe;
+  width: 800px;
+  height: calc(90vh - 64px);
+}
