@@ -2,31 +2,37 @@
   {
     "title": "Agility",
     "desc": "Agility workout description...",
-    "img": "https://source.unsplash.com/WU2TFyzKTqY"
+    "img": "https://source.unsplash.com/WU2TFyzKTqY",
+    "levels": [{ "level": 1 }, { "level": 2 }]
   },
   {
     "title": "Mobility",
     "desc": "Mobility workout description...",
-    "img": "https://source.unsplash.com/k1KCiRaDQhs"
+    "img": "https://source.unsplash.com/k1KCiRaDQhs",
+    "levels": [{ "level": 1 }, { "level": 2 }]
   },
   {
     "title": "Stability",
     "desc": "Stabilization workout description...",
-    "img": "https://source.unsplash.com/ra7gJbmr2Rg"
+    "img": "https://source.unsplash.com/ra7gJbmr2Rg",
+    "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
   },
   {
     "title": "Strength",
     "desc": "Strength workout description...",
-    "img": "https://source.unsplash.com/29XohzkscAM"
+    "img": "https://source.unsplash.com/29XohzkscAM",
+    "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
   },
   {
     "title": "Quickness",
     "desc": "Quickness workout description...",
-    "img": "https://source.unsplash.com/PHIgYUGQPvU"
+    "img": "https://source.unsplash.com/PHIgYUGQPvU",
+    "levels": [{ "level": 1 }, { "level": 2 }]
   },
   {
     "title": "Vertical",
     "desc": "Vertical workout description...",
-    "img": "https://source.unsplash.com/wy_L8W0zcpI"
+    "img": "https://source.unsplash.com/wy_L8W0zcpI",
+    "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
   }
 ]
