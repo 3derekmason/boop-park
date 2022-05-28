@@ -13,6 +13,7 @@ import {
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import styles from "./login.module.scss";
 import BoopHeader from "../components/BoopHeader";
+import Loading from "../components/Loading";
 import { useAppContext } from "../../context/state";
 import { useState } from "react";
 
@@ -23,7 +24,10 @@ const LoginPage = () => {
     password: "",
   };
   const [formValues, setFormValues] = useState(defaultValues);
-
+  const [loading, setLoading] = useState(false);
+  const toggleLoading = () => {
+    setLoading(true);
+  };
   const handleInputChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -35,6 +39,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    toggleLoading();
     const user = {
       username: formValues.username,
       password: formValues.password,
@@ -57,7 +62,9 @@ const LoginPage = () => {
     router.push("/");
   };
 
-  return (
+  return loading ? (
+    <Loading />
+  ) : (
     <div className={styles.loginPage}>
       <Container component="main" maxWidth="xs">
         <Paper elevation={4} className={styles.loginSideBar}>
