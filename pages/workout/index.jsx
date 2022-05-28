@@ -38,15 +38,7 @@ const WorkoutPage = () => {
           Level {currentWorkout?.rx?.level}
         </Typography>
 
-        {JSON.stringify(currentExercise?.name) || ""}
-        <CardMedia
-          component="img"
-          image={currentExercise?.pics?.[0] || ""}
-          alt={`${currentExercise?.name} image`}
-          height="240"
-        />
-        {JSON.stringify(currentExercise?.sets) || ""}
-        <Exercise />
+        <Exercise exerciseData={currentExercise} />
         <Stack
           sx={{ pt: 4 }}
           direction="row"
