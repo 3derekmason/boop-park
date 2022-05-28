@@ -4,11 +4,11 @@ import Image from "material-ui-image";
 
 const Exercise = ({ exerciseData }) => {
   return (
-    <div>
+    <div className={styles.exercise}>
       <Typography color="primary" component="h2" variant="h4">
         {exerciseData?.name || ""}
       </Typography>
-      <div>
+      <div className={styles.helperImages}>
         {exerciseData?.pics?.map((picture, i) => {
           console.log(picture);
           return (
