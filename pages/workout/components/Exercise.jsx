@@ -1,4 +1,6 @@
-import { CardMedia, Typography } from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
+import styles from "./exercise.module.scss";
+import Image from "material-ui-image";
 
 const Exercise = ({ exerciseData }) => {
   return (
@@ -7,12 +9,16 @@ const Exercise = ({ exerciseData }) => {
         {exerciseData?.name || ""}
       </Typography>
       <div>
-        <CardMedia
-          component="img"
-          image={exerciseData?.pics?.[0] || ""}
-          alt={`${exerciseData?.name} image`}
-          height="240"
-        />
+        {exerciseData?.pics?.map((picture, i) => {
+          console.log(picture);
+          return (
+            <Image
+              key={i}
+              src={picture || ""}
+              alt={`${exerciseData?.name} image`}
+            />
+          );
+        })}
       </div>
       <div>
         {exerciseData?.sets?.map((set, i) => {

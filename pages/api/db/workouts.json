@@ -10,7 +10,10 @@
           {
             "name": "Lateral Lunge",
             "sets": ["Three sets of 8 (4 each direction)"],
-            "pics": ["https://source.unsplash.com/WU2TFyzKTqY"]
+            "pics": [
+              "/assets/austris-augusts-viN6rw0uAmU-unsplash.jpg",
+              "https://unsplash.com/photos/gTTtXwqmKPQ"
+            ]
           }
         ]
       },
