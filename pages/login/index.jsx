@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import styles from "./login.module.css";
+import styles from "./login.module.scss";
 import BoopHeader from "../components/BoopHeader";
 import { useAppContext } from "../../context/state";
 import { useState } from "react";

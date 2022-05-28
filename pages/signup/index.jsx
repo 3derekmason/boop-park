@@ -13,7 +13,7 @@ import {
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useState } from "react";
 import PasswordError from "../components/PasswordError";
-import styles from "./signup.module.css";
+import styles from "./signup.module.scss";
 import BoopHeader from "../components/BoopHeader";
 import { useAppContext } from "../../context/state";
 

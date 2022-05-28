@@ -9,7 +9,7 @@ import {
   Modal,
 } from "@mui/material";
 import { useState } from "react";
-import styles from "./workoutCard.module.css";
+import styles from "./workoutCard.module.scss";
 import WorkoutModal from "./WorkoutModal";
 const WorkoutCard = ({ data }) => {
   const [open, setOpen] = useState(false);

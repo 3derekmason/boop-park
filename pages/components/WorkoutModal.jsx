@@ -12,7 +12,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useEffect, useState } from "react";
 import { useAppContext } from "../../context/state";
-import styles from "./workoutModal.module.css";
+import styles from "./workoutModal.module.scss";
 
 const WorkoutModal = ({ workout, open, handleClose }) => {
   const availableLevels = workout?.levels;

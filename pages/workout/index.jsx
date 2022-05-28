@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { useAppContext } from "../../context/state";
 import { useState } from "react";
-import styles from "./workout.module.css";
+import styles from "./workout.module.scss";
 import HomeAppBar from "../components/HomeAppbar";
 import LoginPage from "../login";
 

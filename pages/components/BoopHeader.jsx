@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
-import styles from "./boopHeader.module.css";
+import styles from "./boopHeader.module.scss";
 
 const BoopHeader = () => {
   return (

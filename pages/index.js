@@ -3,7 +3,7 @@ import { Button, Container, Typography, Stack, Grid } from "@mui/material";
 import Loading from "./components/Loading";
 import HomeAppBar from "./components/HomeAppbar";
 import LoginPage from "./login";
-import styles from "./landing.module.css";
+import styles from "./landing.module.scss";
 import WorkoutCard from "./components/WorkoutCard";
 import capatilize from "../util/capatilize";
 import getDayOfWeek from "../util/getDayOfWeek";
