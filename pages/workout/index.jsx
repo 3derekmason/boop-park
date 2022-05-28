@@ -18,7 +18,7 @@ const WorkoutPage = () => {
   const [currentExercise, setCurrentExercise] = useState(
     currentWorkout?.rx?.exercises?.[0]
   );
-  return !currentUser.username ? (
+  return !currentUser?.username ? (
     <LoginPage />
   ) : (
     <div className={styles.workoutPage}>
