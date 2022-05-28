@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import { AppWrapper } from "../context/state";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { wrapper, store } from "../store.js";
+import { Provider } from "react-redux";
 
 const theme = createTheme({
   palette: {
@@ -29,4 +31,5 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
+// export default wrapper.withRedux(MyApp);
 export default MyApp;
