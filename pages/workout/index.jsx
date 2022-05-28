@@ -11,6 +11,7 @@ import { useState } from "react";
 import styles from "./workout.module.scss";
 import HomeAppBar from "../components/HomeAppbar";
 import LoginPage from "../login";
+import Exercise from "./components/Exercise";
 
 const WorkoutPage = () => {
   const { currentWorkout, setCurrentWorkout, router, currentUser } =
@@ -45,7 +46,7 @@ const WorkoutPage = () => {
           height="240"
         />
         {JSON.stringify(currentExercise?.sets) || ""}
-
+        <Exercise />
         <Stack
           sx={{ pt: 4 }}
           direction="row"
