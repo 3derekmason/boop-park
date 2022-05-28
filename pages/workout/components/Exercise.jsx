@@ -1,16 +1,24 @@
-import { CardMedia } from "@mui/material";
+import { CardMedia, Typography } from "@mui/material";
 
 const Exercise = ({ exerciseData }) => {
   return (
     <div>
-      {exerciseData?.name || ""}
-      <CardMedia
-        component="img"
-        image={exerciseData?.pics?.[0] || ""}
-        alt={`${exerciseData?.name} image`}
-        height="240"
-      />
-      {JSON.stringify(exerciseData?.sets) || ""}
+      <Typography color="primary" component="h2" variant="h4">
+        {exerciseData?.name || ""}
+      </Typography>
+      <div>
+        <CardMedia
+          component="img"
+          image={exerciseData?.pics?.[0] || ""}
+          alt={`${exerciseData?.name} image`}
+          height="240"
+        />
+      </div>
+      <div>
+        {exerciseData?.sets?.map((set, i) => {
+          return <li key={i}>{set}</li>;
+        })}
+      </div>
     </div>
   );
 };

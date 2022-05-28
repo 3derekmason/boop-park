@@ -9,7 +9,7 @@
         "exercises": [
           {
             "name": "Lateral Lunge",
-            "sets": "Three sets of 8 (4 each direction)",
+            "sets": ["Three sets of 8 (4 each direction)"],
             "pics": ["https://source.unsplash.com/WU2TFyzKTqY"]
           }
         ]
