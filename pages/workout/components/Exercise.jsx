@@ -25,7 +25,7 @@ const Exercise = ({ exerciseData }) => {
           );
         })}
       </div>
-      <div>
+      <div className={styles.setContainer}>
         {exerciseData?.sets?.map((set, i) => {
           return <li key={i}>{set}</li>;
         })}
