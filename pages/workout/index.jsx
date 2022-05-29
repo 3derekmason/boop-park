@@ -16,9 +16,17 @@ import Exercise from "./components/Exercise";
 const WorkoutPage = () => {
   const { currentWorkout, setCurrentWorkout, router, currentUser } =
     useAppContext();
+  const exIndex = 0;
   const [currentExercise, setCurrentExercise] = useState(
-    currentWorkout?.rx?.exercises?.[0]
+    currentWorkout?.rx?.exercises?.[exIndex]
   );
+  const nextExercise = () => {
+    console.log(exIndex);
+    exIndex++;
+    console.log(exIndex, "updated");
+    setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
+    console.log(currentExercise);
+  };
   return !currentUser?.username ? (
     <LoginPage />
   ) : (
@@ -53,7 +61,9 @@ const WorkoutPage = () => {
           >
             Back to Home
           </Button>
-          <Button variant="outlined">Next</Button>
+          <Button onClick={nextExercise} variant="outlined">
+            Next
+          </Button>
         </Stack>
       </Box>
     </div>
