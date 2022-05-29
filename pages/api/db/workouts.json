@@ -14,6 +14,14 @@
               "/assets/agility/lateral-lunge1.jpg",
               "/assets/agility/lunge2.jpg"
             ]
+          },
+          {
+            "name": "Leaning sprints",
+            "sets": ["x4 ~10 yards", "x2 ~25 yards", "x2 ~10 yards"],
+            "pics": [
+              "/assets/agility/lateral-lunge1.jpg",
+              "/assets/agility/lunge2.jpg"
+            ]
           }
         ]
       },

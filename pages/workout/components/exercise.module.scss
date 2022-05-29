@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 24px;
   align-items: center;
 }
 .helperPics {
@@ -11,5 +12,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 1em;
   position: relative;
 }
