@@ -42,7 +42,7 @@ const WorkoutPage = () => {
       <Box className={styles.workoutContainer}>
         <Typography
           component="h1"
-          variant="h2"
+          variant="h4"
           align="center"
           color="primary"
           gutterBottom

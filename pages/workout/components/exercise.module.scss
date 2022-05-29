@@ -1,9 +1,11 @@
 $lightBlue: #2196f3;
 $darkBlue: #0d47a1;
+$transparentBlue: #e3f2fd90;
 
 .exercise {
   width: 100%;
   height: 56%;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;

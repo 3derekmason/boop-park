@@ -5,9 +5,6 @@ import Image from "material-ui-image";
 const Exercise = ({ exerciseData }) => {
   return (
     <div className={styles.exercise}>
-      <Typography color="primary" component="h2" variant="h5">
-        {exerciseData?.name || ""}
-      </Typography>
       <div className={styles.helperPics}>
         {exerciseData?.pics?.map((picture, i) => {
           return (
@@ -25,6 +22,10 @@ const Exercise = ({ exerciseData }) => {
           );
         })}
       </div>
+      <Typography color="primary" component="h2" variant="h5">
+        {exerciseData?.name || ""}
+      </Typography>
+
       <div className={styles.setContainer}>
         {exerciseData?.sets?.map((set, i) => {
           return <li key={i}>{set}</li>;
