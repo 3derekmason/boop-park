@@ -21,11 +21,8 @@ const WorkoutPage = () => {
     currentWorkout?.rx?.exercises?.[exIndex]
   );
   const nextExercise = () => {
-    console.log(exIndex);
     exIndex++;
-    console.log(exIndex, "updated");
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
-    console.log(currentExercise);
   };
   return !currentUser?.username ? (
     <LoginPage />
@@ -53,18 +50,25 @@ const WorkoutPage = () => {
           spacing={2}
           justifyContent="center"
         >
-          <Button
-            onClick={() => {
-              router.push("/");
-            }}
-            variant="contained"
-          >
-            Back to Home
+          <Button onClick={nextExercise} variant="outlined">
+            Prev
           </Button>
           <Button onClick={nextExercise} variant="outlined">
             Next
           </Button>
         </Stack>
+        <Button
+          fullWidth
+          size="small"
+          onClick={() => {
+            router.push("/");
+          }}
+          color="secondary"
+          variant="contained"
+          sx={{ my: 2 }}
+        >
+          Back to Home
+        </Button>
       </Box>
     </div>
   );
