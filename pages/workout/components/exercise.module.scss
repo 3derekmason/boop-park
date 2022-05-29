@@ -11,6 +11,7 @@ $transparentBlue: #e3f2fd90;
   justify-content: center;
   gap: 24px;
   align-items: center;
+  animation: fadeIn 1s;
 }
 .helperPics {
   height: 160px;
@@ -29,4 +30,14 @@ $transparentBlue: #e3f2fd90;
   place-content: center;
   width: 100%;
   height: 3em;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
