@@ -22,7 +22,7 @@ const WorkoutPage = () => {
   const [currentExercise, setCurrentExercise] = useState(
     currentWorkout?.rx?.exercises?.[exIndex]
   );
-  const max = currentWorkout?.rx?.exercises.length - 1;
+  const max = currentWorkout?.rx?.exercises?.length - 1;
   const nextExercise = () => {
     exIndex++;
     console.log(exIndex, max);
@@ -79,6 +79,7 @@ const WorkoutPage = () => {
           fullWidth
           size="small"
           onClick={() => {
+            exIndex = 0;
             router.push("/");
           }}
           color="secondary"
