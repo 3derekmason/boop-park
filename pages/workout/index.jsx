@@ -14,6 +14,7 @@ import LoginPage from "../login";
 import Exercise from "./components/Exercise";
 
 const exIndex = 0;
+const completed = false;
 
 const WorkoutPage = () => {
   const { currentWorkout, setCurrentWorkout, router, currentUser } =
@@ -25,7 +26,9 @@ const WorkoutPage = () => {
   const max = currentWorkout?.rx?.exercises?.length - 1;
   const nextExercise = () => {
     exIndex++;
-    console.log(exIndex, max);
+    if (exIndex === max + 1) {
+      completed = true;
+    }
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
   };
   const prevExercise = () => {
@@ -70,24 +73,41 @@ const WorkoutPage = () => {
           <Button
             onClick={nextExercise}
             variant="outlined"
-            disabled={exIndex === max}
+            disabled={exIndex === max + 1}
           >
             Next
           </Button>
         </Stack>
-        <Button
-          fullWidth
-          size="small"
-          onClick={() => {
-            exIndex = 0;
-            router.push("/");
-          }}
-          color="secondary"
-          variant="contained"
-          sx={{ my: 2 }}
-        >
-          Back to Home
-        </Button>
+        {!completed ? (
+          <Button
+            fullWidth
+            size="small"
+            onClick={() => {
+              exIndex = 0;
+              router.push("/");
+            }}
+            color="secondary"
+            variant="contained"
+            sx={{ my: 2 }}
+          >
+            Back to Home
+          </Button>
+        ) : (
+          <Button
+            fullWidth
+            size="small"
+            onClick={() => {
+              exIndex = 0;
+              completed = false;
+              router.push("/");
+            }}
+            color="primary"
+            variant="contained"
+            sx={{ my: 2 }}
+          >
+            Great Job! Complete Workout
+          </Button>
+        )}
       </Box>
     </div>
   );
