@@ -42,6 +42,7 @@ const WorkoutPage = () => {
   ) : (
     <div className={styles.workoutPage}>
       <HomeAppBar />
+
       <Box className={styles.workoutContainer}>
         <Typography
           component="h1"
@@ -52,11 +53,22 @@ const WorkoutPage = () => {
         >
           {currentWorkout?.title}
         </Typography>
-        <Typography variant="h5" align="center" color="secondary" paragraph>
-          Level {currentWorkout?.rx?.level}
-        </Typography>
-
+        {!completed ? (
+          <Typography variant="h5" align="center" color="secondary" paragraph>
+            Level {currentWorkout?.rx?.level}
+          </Typography>
+        ) : (
+          <Typography
+            variant="h5"
+            align="center"
+            color="secondary"
+            className={styles.complete}
+          >
+            Training Complete
+          </Typography>
+        )}
         <Exercise exerciseData={currentExercise} />
+
         <Stack
           sx={{ pt: 4 }}
           direction="row"

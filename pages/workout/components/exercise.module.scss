@@ -32,6 +32,9 @@ $transparentBlue: #e3f2fd90;
   height: 3em;
   animation: fadeIn 1.5s;
 }
+.complete {
+  animation: fadeIn 1s;
+}
 
 @keyframes fadeIn {
   0% {
