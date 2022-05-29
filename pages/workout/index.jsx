@@ -13,15 +13,25 @@ import HomeAppBar from "../components/HomeAppbar";
 import LoginPage from "../login";
 import Exercise from "./components/Exercise";
 
+const exIndex = 0;
+
 const WorkoutPage = () => {
   const { currentWorkout, setCurrentWorkout, router, currentUser } =
     useAppContext();
-  const exIndex = 0;
+
   const [currentExercise, setCurrentExercise] = useState(
     currentWorkout?.rx?.exercises?.[exIndex]
   );
+  const max = currentWorkout?.rx?.exercises.length - 1;
   const nextExercise = () => {
     exIndex++;
+    console.log(exIndex, max);
+    setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
+  };
+  const prevExercise = () => {
+    console.log(exIndex);
+    exIndex--;
+    console.log(exIndex, max);
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
   };
   return !currentUser?.username ? (
@@ -50,10 +60,18 @@ const WorkoutPage = () => {
           spacing={2}
           justifyContent="center"
         >
-          <Button onClick={nextExercise} variant="outlined">
+          <Button
+            onClick={prevExercise}
+            variant="outlined"
+            disabled={exIndex === 0}
+          >
             Prev
           </Button>
-          <Button onClick={nextExercise} variant="outlined">
+          <Button
+            onClick={nextExercise}
+            variant="outlined"
+            disabled={exIndex === max}
+          >
             Next
           </Button>
         </Stack>
