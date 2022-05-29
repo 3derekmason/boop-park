@@ -1,11 +1,15 @@
 .exercise {
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-}
-
-.helperImages {
-  display: flex;
   width: 100%;
-  height: 100%;
+  height: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.helperPics {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
