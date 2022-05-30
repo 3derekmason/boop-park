@@ -38,7 +38,88 @@
     "img": "https://source.unsplash.com/k1KCiRaDQhs",
     "equipment": ["Mat (optional)"],
     "estTime": "10-12 minutes",
-    "levels": [{ "level": 1 }, { "level": 2 }]
+    "levels": [
+      {
+        "level": 1,
+        "exercises": [
+          {
+            "name": "High Knees",
+            "sets": ["3 - 4 sets of ~10 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Ankle X",
+            "sets": ["2 sets of 10 (each foot)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Front Scale",
+            "sets": ["3 sets of 5 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Lunge / Reverse Lunge",
+            "sets": ["2 sets of ~10 yards (each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Bear Crawl",
+            "sets": ["4 sets of ~10 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Windmill",
+            "sets": ["3 sets of 10 (each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "exercises": [
+          {
+            "name": "Ankle X",
+            "sets": ["2 sets of 10 (each foot)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Front Scale",
+            "sets": ["2 sets of 8 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Tuck Jump",
+            "sets": ["3 sets of 8"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Pike to Squat",
+            "sets": ["x5"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Lunge / Reverse Lunge",
+            "sets": ["3 sets of ~10-15 yards (each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Bear Crawl",
+            "sets": ["4 sets of ~10 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Pistol / Single Leg Squat",
+            "sets": ["3 sets of 5 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Turkish getup",
+            "sets": ["2-3 sets of 5 (each side)"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      }
+    ]
   },
   {
     "title": "Stability",
