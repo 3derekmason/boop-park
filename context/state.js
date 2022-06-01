@@ -5,6 +5,7 @@ const AppContext = createContext();
 export function AppWrapper({ children }) {
   const [currentUser, setCurrentUser] = useState();
   const [currentWorkout, setCurrentWorkout] = useState();
+  const [completed, setCompleted] = useState(false);
   const router = useRouter();
   let sharedState = {
     currentUser,
@@ -12,6 +13,8 @@ export function AppWrapper({ children }) {
     router,
     currentWorkout,
     setCurrentWorkout,
+    completed,
+    setCompleted,
   };
 
   return (

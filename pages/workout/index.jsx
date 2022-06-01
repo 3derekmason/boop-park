@@ -14,11 +14,16 @@ import LoginPage from "../login";
 import Exercise from "./components/Exercise";
 
 const exIndex = 0;
-const completed = false;
 
 const WorkoutPage = () => {
-  const { currentWorkout, setCurrentWorkout, router, currentUser } =
-    useAppContext();
+  const {
+    currentWorkout,
+    setCurrentWorkout,
+    router,
+    currentUser,
+    completed,
+    setCompleted,
+  } = useAppContext();
 
   const [currentExercise, setCurrentExercise] = useState(
     currentWorkout?.rx?.exercises?.[exIndex]
@@ -27,21 +32,25 @@ const WorkoutPage = () => {
   const nextExercise = () => {
     exIndex++;
     if (exIndex === max + 1) {
-      completed = true;
+      setCompleted(true);
     }
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
   };
   const prevExercise = () => {
-    console.log(exIndex);
     exIndex--;
-    console.log(exIndex, max);
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
   };
   return !currentUser?.username ? (
-    <LoginPage />
+    <LoginPage
+      setCurrentExercise={setCurrentExercise}
+      data={currentWorkout?.rx?.exercises?.[exIndex]}
+    />
   ) : (
     <div className={styles.workoutPage}>
-      <HomeAppBar />
+      <HomeAppBar
+        setCurrentExercise={setCurrentExercise}
+        firstExercise={currentWorkout?.rx?.exercises?.[0]}
+      />
 
       <Box className={styles.workoutContainer}>
         <Typography
@@ -110,7 +119,7 @@ const WorkoutPage = () => {
             size="small"
             onClick={() => {
               exIndex = 0;
-              completed = false;
+              setCompleted(false);
               router.push("/");
             }}
             color="primary"
