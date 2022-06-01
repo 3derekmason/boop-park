@@ -8,29 +8,110 @@
         "level": 1,
         "exercises": [
           {
-            "name": "Lateral Lunge",
-            "sets": ["Three sets of 8 (4 each direction)"],
-            "pics": [
-              "/assets/agility/lateral-lunge1.jpg",
-              "/assets/agility/lunge2.jpg"
-            ]
-          },
-          {
-            "name": "Leaning sprints",
-            "sets": ["x4 ~10 yards", "x2 ~25 yards", "x2 ~10 yards"],
+            "name": "High Knees",
+            "sets": ["2 sets of ~15 yards"],
             "pics": ["https://source.unsplash.com/random"]
           },
           {
-            "name": "Sprints",
-            "sets": ["x4 ~10 yards", "x2 ~25 yards", "x2 ~10 yards"],
+            "name": "Build Ups",
+            "sets": ["2x ~75 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Box Drill",
+            "sets": ["2x (each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Tuck Jump",
+            "sets": ["3 sets 15"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Run - Shuffle - Run",
+            "sets": ["2x (20 20 20 each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Lean - Fall - Go",
+            "sets": ["2x ~25 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "20 yard sprint",
+            "sets": ["4x"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "40 yard sprint",
+            "sets": ["2x"],
             "pics": ["https://source.unsplash.com/random"]
           }
         ]
       },
-      { "level": 2 }
+      {
+        "level": 2,
+        "exercises": [
+          {
+            "name": "High Knees",
+            "sets": ["2 sets of ~15 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Build Ups",
+            "sets": ["2 sets of ~50 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Lean - Fall - Go",
+            "sets": ["2 sets of ~50 yards"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "20 yard sprint",
+            "sets": ["2x"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "40 yard sprint",
+            "sets": ["2x"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "T Drill",
+            "sets": ["2x (each diretion)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Tuck Jump",
+            "sets": ["3 sets of 20"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Figure 8",
+            "sets": ["2x (each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "S.L Bound",
+            "sets": ["2 sets of ~15 yards (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Standing Calf raise",
+            "sets": ["2 sets of 15"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "180 Jump Squat",
+            "sets": ["3 sets of 10"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      }
     ],
     "equipment": ["Cones (optional)"],
-    "estTime": "10-15 minutes"
+    "estTime": "25-30 minutes"
   },
   {
     "title": "Mobility",
@@ -126,7 +207,7 @@
     "desc": "Train for a more balanced life.",
     "img": "https://source.unsplash.com/ra7gJbmr2Rg",
     "equipment": ["None!"],
-    "estTime": "8-10 minutes",
+    "estTime": "15-20 minutes",
     "levels": [
       {
         "level": 1,
