@@ -444,9 +444,111 @@
     "equipment": ["Box / Park Bench", "Jump rope"],
     "estTime": "15-20 minutes",
     "levels": [
-      { "level": 1, "exercises": [] },
-      { "level": 2, "exercises": [] },
-      { "level": 3, "exercises": [] }
+      {
+        "level": 1,
+        "exercises": [
+          {
+            "name": "Leap Ups",
+            "sets": ["2 sets of 20"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Calf Raise",
+            "sets": ["2 sets of 10"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Step Up Hop",
+            "sets": ["2 sets of 10"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Thrust Up",
+            "sets": ["2 sets of 15"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Jump rope",
+            "sets": ["100"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Jumps for height",
+            "sets": ["8"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "exercises": [
+          {
+            "name": "Leap Ups",
+            "sets": ["4 sets of 20"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Calf Raise",
+            "sets": ["2 sets of 20"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Step Up Hop",
+            "sets": ["2 sets of 20"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Thrust Up",
+            "sets": ["2 sets of 50"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Jump rope",
+            "sets": ["250"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Jumps for height",
+            "sets": ["10"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "exercises": [
+          {
+            "name": "Leap Ups",
+            "sets": ["3 sets of 40"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Calf Raise",
+            "sets": ["4 sets of 12"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Step Up Hop",
+            "sets": ["4 sets of 20"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Thrust Up",
+            "sets": ["4 sets of 50"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Jump rope",
+            "sets": ["300"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Jumps for height",
+            "sets": ["12"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      }
     ]
   }
 ]
