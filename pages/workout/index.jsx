@@ -13,8 +13,6 @@ import HomeAppBar from "../components/HomeAppbar";
 import LoginPage from "../login";
 import Exercise from "./components/Exercise";
 
-const exIndex = 0;
-
 const WorkoutPage = () => {
   const {
     currentWorkout,
@@ -26,18 +24,19 @@ const WorkoutPage = () => {
   } = useAppContext();
 
   const [currentExercise, setCurrentExercise] = useState(
-    currentWorkout?.rx?.exercises?.[exIndex]
+    currentWorkout?.rx?.exercises?.[0]
   );
+  const [exIndex, setExIndex] = useState(0);
   const max = currentWorkout?.rx?.exercises?.length - 1;
   const nextExercise = () => {
-    exIndex++;
+    setExIndex(exIndex + 1);
     if (exIndex === max + 1) {
       setCompleted(true);
     }
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
   };
   const prevExercise = () => {
-    exIndex--;
+    setExIndex(exIndex - 1);
     setCurrentExercise(currentWorkout?.rx?.exercises?.[exIndex]);
   };
   return !currentUser?.username ? (
@@ -104,7 +103,7 @@ const WorkoutPage = () => {
             fullWidth
             size="small"
             onClick={() => {
-              exIndex = 0;
+              setExIndex(0);
               router.push("/");
             }}
             color="secondary"
@@ -118,7 +117,7 @@ const WorkoutPage = () => {
             fullWidth
             size="small"
             onClick={() => {
-              exIndex = 0;
+              setExIndex(0);
               setCompleted(false);
               router.push("/");
             }}
