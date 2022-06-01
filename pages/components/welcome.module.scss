@@ -1,0 +1,34 @@
+.welcomeModal {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeMessage {
+  padding: 24px;
+  background: #21212190;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+}
+.welcomeMessage:hover {
+  background: #212121;
+}
+
+.welcomeMessage .notice {
+  color: #eee;
+}
+
+.btnRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}

@@ -32,34 +32,35 @@ const SignUpPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     handleWelcomeOpen();
-    // const data = new FormData(event.currentTarget);
-    // if (data.get("password") !== data.get("verifyPassword")) {
-    //   toggleErrMessage(true);
-    //   return;
-    // } else {
-    //   toggleErrMessage(false);
-    // }
-    // const newUser = {
-    //   first: data.get("firstName"),
-    //   last: data.get("lastName"),
-    //   username: data.get("username"),
-    //   password: data.get("password"),
-    // };
-    // fetch("/api/users", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(newUser),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     setCurrentUser(data);
-    //     // router.push("/");
-    //   })
-    //   .catch((error) => {
-    //     console.error("Error:", error);
-    //   });
+    const data = new FormData(event.currentTarget);
+    if (data.get("password") !== data.get("verifyPassword")) {
+      toggleErrMessage(true);
+      return;
+    } else {
+      toggleErrMessage(false);
+    }
+    const newUser = {
+      first: data.get("firstName"),
+      last: data.get("lastName"),
+      username: data.get("username"),
+      password: data.get("password"),
+    };
+    fetch("/api/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newUser),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setCurrentUser(data);
+        // router.push("/");
+        handleWelcomeOpen();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (
@@ -152,7 +153,11 @@ const SignUpPage = () => {
           </Box>
         </Box>
       </Container>
-      <Welcome open={welcome} close={handleWelcomeClose} />
+      <Welcome
+        open={welcome}
+        close={handleWelcomeClose}
+        currentUser={currentUser}
+      />
     </div>
   );
 };
