@@ -49,6 +49,7 @@ const WorkoutPage = () => {
     <div className={styles.workoutPage}>
       <HomeAppBar
         exIndex={exIndex}
+        currentExercise={currentExercise}
         setCurrentExercise={setCurrentExercise}
         firstExercise={currentWorkout?.rx?.exercises?.[0]}
       />
