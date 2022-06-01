@@ -11,9 +11,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Loading from "./Loading";
 import { useAppContext } from "../../context/state";
 
-const HomeAppBar = () => {
+const HomeAppBar = ({ exIndex, setCurrentExercise, firstExercise }) => {
   const { setCurrentUser, currentUser, setCompleted } = useAppContext();
+  const resetEx = (exercise) => {
+    setCurrentExercise(exercise);
+  };
   const logout = () => {
+    exIndex = 0;
+    resetEx(firstExercise);
     setCompleted(false);
     setCurrentUser("");
   };

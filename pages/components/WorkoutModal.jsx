@@ -16,9 +16,7 @@ import styles from "./workoutModal.module.scss";
 
 const WorkoutModal = ({ workout, open, handleClose }) => {
   const availableLevels = workout?.levels;
-  const { currentWorkout, setCurrentWorkout, router } = useAppContext(
-    workout?.levels?.[0]
-  );
+  const { currentWorkout, setCurrentWorkout, router } = useAppContext();
   const [chosenLevelIndex, setChosenLevelIndex] = useState(0);
 
   const handleWorkoutChange = (index) => {
@@ -30,7 +28,9 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
   const levelDown = () => {
     setChosenLevelIndex(chosenLevelIndex - 1);
   };
-
+  useEffect(() => {
+    setCurrentWorkout(workout?.levels?.[0]);
+  }, [, setCurrentWorkout, workout?.levels]);
   return (
     <Modal
       className={styles.modalPage}
