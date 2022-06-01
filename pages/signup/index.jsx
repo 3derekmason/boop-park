@@ -20,46 +20,46 @@ import { useAppContext } from "../../context/state";
 
 const SignUpPage = () => {
   const { currentUser, setCurrentUser, router } = useAppContext();
-  const { welcome, setWelcome } = useState(false);
+  const [welcome, setWelcome] = useState(false);
   const [errMessage, toggleErrMessage] = useState(false);
   const handleWelcomeOpen = () => {
-    setOpenWelcome(true);
+    setWelcome(true);
   };
 
   const handleWelcomeClose = () => {
-    setOpenWelcome(false);
+    setWelcome(false);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    if (data.get("password") !== data.get("verifyPassword")) {
-      toggleErrMessage(true);
-      return;
-    } else {
-      toggleErrMessage(false);
-    }
-    const newUser = {
-      first: data.get("firstName"),
-      last: data.get("lastName"),
-      username: data.get("username"),
-      password: data.get("password"),
-    };
-    fetch("/api/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newUser),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setCurrentUser(data);
-        // router.push("/");
-        setWelcome(true);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+    handleWelcomeOpen();
+    // const data = new FormData(event.currentTarget);
+    // if (data.get("password") !== data.get("verifyPassword")) {
+    //   toggleErrMessage(true);
+    //   return;
+    // } else {
+    //   toggleErrMessage(false);
+    // }
+    // const newUser = {
+    //   first: data.get("firstName"),
+    //   last: data.get("lastName"),
+    //   username: data.get("username"),
+    //   password: data.get("password"),
+    // };
+    // fetch("/api/users", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(newUser),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     setCurrentUser(data);
+    //     // router.push("/");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error:", error);
+    //   });
   };
 
   return (
