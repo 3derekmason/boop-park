@@ -8,15 +8,18 @@ import {
 } from "@mui/material";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import MenuIcon from "@mui/icons-material/Menu";
+import Loading from "./Loading";
 import { useAppContext } from "../../context/state";
 
 const HomeAppBar = () => {
-  const { setCurrentUser, setCompleted } = useAppContext();
+  const { setCurrentUser, currentUser, setCompleted } = useAppContext();
   const logout = () => {
     setCompleted(false);
     setCurrentUser("");
   };
-  return (
+  return !currentUser ? (
+    <Loading />
+  ) : (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar>
