@@ -31,7 +31,7 @@ const SignUpPage = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    handleWelcomeOpen();
+
     const data = new FormData(event.currentTarget);
     if (data.get("password") !== data.get("verifyPassword")) {
       toggleErrMessage(true);
@@ -45,6 +45,9 @@ const SignUpPage = () => {
       username: data.get("username"),
       password: data.get("password"),
     };
+    if (!newUser.username || !newUser.password) {
+      return;
+    }
     fetch("/api/users", {
       method: "POST",
       headers: {

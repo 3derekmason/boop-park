@@ -39,7 +39,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formValues.username) {
+    if (!formValues.username || !formValues.password) {
       router.push("/");
       return;
     }
