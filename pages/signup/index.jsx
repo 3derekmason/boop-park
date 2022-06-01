@@ -15,11 +15,20 @@ import { useState } from "react";
 import PasswordError from "../components/PasswordError";
 import styles from "./signup.module.scss";
 import BoopHeader from "../components/BoopHeader";
+import Welcome from "../components/Welcome";
 import { useAppContext } from "../../context/state";
 
 const SignUpPage = () => {
   const { currentUser, setCurrentUser, router } = useAppContext();
+  const { welcome, setWelcome } = useState(false);
   const [errMessage, toggleErrMessage] = useState(false);
+  const handleWelcomeOpen = () => {
+    setOpenWelcome(true);
+  };
+
+  const handleWelcomeClose = () => {
+    setOpenWelcome(false);
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -45,7 +54,8 @@ const SignUpPage = () => {
       .then((response) => response.json())
       .then((data) => {
         setCurrentUser(data);
-        router.push("/");
+        // router.push("/");
+        setWelcome(true);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -142,6 +152,7 @@ const SignUpPage = () => {
           </Box>
         </Box>
       </Container>
+      <Welcome open={welcome} close={handleWelcomeClose} />
     </div>
   );
 };

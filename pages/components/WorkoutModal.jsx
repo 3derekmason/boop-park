@@ -32,13 +32,7 @@ const WorkoutModal = ({ workout, open, handleClose }) => {
     setCurrentWorkout(workout?.levels?.[0]);
   }, [, setCurrentWorkout, workout?.levels]);
   return (
-    <Modal
-      className={styles.modalPage}
-      open={open}
-      onClose={handleClose}
-      aria-labelledby="modal-modal-title"
-      aria-describedby="modal-modal-description"
-    >
+    <Modal className={styles.modalPage} open={open} onClose={handleClose}>
       <Container className={styles.modalContainer} maxWidth={"sm"}>
         <Paper className={styles.workoutModal} elevation={3}>
           <CardMedia
