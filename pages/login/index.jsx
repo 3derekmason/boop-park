@@ -39,6 +39,10 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!formValues.username) {
+      router.push("/");
+      return;
+    }
     toggleLoading();
     const user = {
       username: formValues.username,
