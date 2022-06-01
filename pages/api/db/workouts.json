@@ -127,7 +127,108 @@
     "img": "https://source.unsplash.com/ra7gJbmr2Rg",
     "equipment": ["None!"],
     "estTime": "8-10 minutes",
-    "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
+    "levels": [
+      {
+        "level": 1,
+        "exercises": [
+          {
+            "name": "Front Scale",
+            "sets": ["3 set of 5 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Step Up (w 2 second hold)",
+            "sets": ["4 sets of 6 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Clock Squat",
+            "sets": ["3x (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "S.L. Romanian Deadlift",
+            "sets": ["3 set of 4 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Standing Hip Rotation",
+            "sets": ["3 set of 5 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "exercises": [
+          {
+            "name": "Front Scale",
+            "sets": ["3 sets of 8 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "S.L. Romanian Deadlift",
+            "sets": ["3 sets of 8 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Standing Hip Rotation",
+            "sets": ["2 sets of 8 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Clock Squat",
+            "sets": ["4x (each direction)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Lateral Hop + Hold",
+            "sets": ["4 sets of 4 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "exercises": [
+          {
+            "name": "Front Scale",
+            "sets": ["2 sets of 8 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Clock Squat",
+            "sets": ["4x (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "S.L. Romanian Deadlift",
+            "sets": ["3 sets of 10 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Standing Hip Rotation",
+            "sets": ["2 sets of 6 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Tuck Jump (to S.L hold)",
+            "sets": ["4 sets of 16 (8 each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "Full Scale",
+            "sets": ["3 sets of 5 (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          },
+          {
+            "name": "S.L. Bounds",
+            "sets": ["2 sets of ~15 yards (each leg)"],
+            "pics": ["https://source.unsplash.com/random"]
+          }
+        ]
+      }
+    ]
   },
   {
     "title": "Strength",
@@ -135,7 +236,11 @@
     "img": "https://source.unsplash.com/29XohzkscAM",
     "equipment": ["None!"],
     "estTime": "20-25 minutes",
-    "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
+    "levels": [
+      { "level": 1, "exercises": [] },
+      { "level": 2, "exercises": [] },
+      { "level": 3, "exercises": [] }
+    ]
   },
   {
     "title": "Quickness",
@@ -143,7 +248,10 @@
     "img": "https://source.unsplash.com/PHIgYUGQPvU",
     "equipment": ["Cones (optional)", "Jump rope"],
     "estTime": "10-15 minutes",
-    "levels": [{ "level": 1 }, { "level": 2 }]
+    "levels": [
+      { "level": 1, "exercises": [] },
+      { "level": 2, "exercises": [] }
+    ]
   },
   {
     "title": "Vertical",
@@ -151,6 +259,10 @@
     "img": "https://source.unsplash.com/wy_L8W0zcpI",
     "equipment": ["Box / Park Bench", "Jump rope"],
     "estTime": "15-20 minutes",
-    "levels": [{ "level": 1 }, { "level": 2 }, { "level": 3 }]
+    "levels": [
+      { "level": 1, "exercises": [] },
+      { "level": 2, "exercises": [] },
+      { "level": 3, "exercises": [] }
+    ]
   }
 ]
