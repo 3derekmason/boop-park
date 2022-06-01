@@ -10,10 +10,10 @@ import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useAppContext } from "../../context/state";
 
-const HomeAppBar = ({ setCurrentExercise, firstExercise }) => {
-  console.log(setCurrentExercise, firstExercise);
+const HomeAppBar = () => {
   const { setCurrentUser, setCompleted } = useAppContext();
   const logout = () => {
+    setCompleted(false);
     setCurrentUser("");
   };
   return (
@@ -32,14 +32,7 @@ const HomeAppBar = ({ setCurrentExercise, firstExercise }) => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Welcome to Boop Park
           </Typography>
-          <Button
-            onClick={() => {
-              setCurrentExercise(firstExercise);
-              setCompleted(false);
-              logout();
-            }}
-            color="inherit"
-          >
+          <Button onClick={logout} color="inherit">
             Logout
           </Button>
         </Toolbar>
