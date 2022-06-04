@@ -1,34 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src='./styles/colors/net.png'/>
+
+<br>
+
+# Welcome to Boop Park
+
+## Overview
+
+**Hoops Park** is a great little public park in Aurora, Colorado. After many visits to play ball and train, I got the idea to create various workouts that anyone could do, anywhere. For instance at a public basketball court...
+
+The name **Boop Park** simply comes from the first time I told a roommate about Hoops Park, they misheard what I said and it has been referred to as _Boop_ Park ever since.
+
+<br>
+
+---
+
+## Features
+
+> Database Development with
+
+- User password encryption & auth with [bcrypt.js](https://github.com/dcodeIO/bcrypt.js#readme)
+
+- Node.js server with custom API using [ExpressJS](https://expressjs.com/) & [MongoDB](https://www.mongodb.com/)
+
+> Front End Development using
+
+- [NextJS](https://nextjs.org/) & [Vercel](https://vercel.com/about) for production & deployment
+
+- [Sass](https://sass-lang.com/) & [MaterialUI](https://mui.com/) for styling
+
+> Custom training programs
+
+- Written by a certified personal trainer
+
+<br>
+
+---
 
 ## Getting Started
 
-First, run the development server:
+##### Please remember that all training programs are intended to be _fun_ and something you want to do to improve your quality of life. Never push yourself past your limits and always reach out with any questions.
 
-```bash
+<br>
+
+Boop Park is completely free to use, you won't even need an email address to sign up.
+
+<img src="./styles/colors/sign-up.png" height="240"/>
+
+Upon successfully creating an account you will be redirected to the home landing page.
+
+This is where you will be able to choose from the variety of training programs available.
+
+<img src="./styles/colors/landing.png" height="240"/>
+
+Choose what type of workout you want to do and what level you want to train at. _\*Obviously starting with Level 1 is recommended_.
+
+<img src="./styles/colors/workout.png" height="240"/>
+
+From the exercise page you will be able to navigate through each exercise of the workout. When you get to the end you can choose to go back and look over the exercises, or return to the home page.
+
+<img src="./styles/colors/completed.png" height="40"/>
+
+<br>
+
+---
+
+## Local Environment
+
+<br>
+
+Start development server after installing dependencies from `./root`
+
+```
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+and databasae server from `./pages/api`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Navigate to [localhost:3030](http://localhost:3030/) to view the running app.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+## Beta Version
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Boop Park is currently in Beta version. This means essential features like user profiles, security, accessibility, and community involvement and feedback, are still being worked on.
 
-## Deploy on Vercel
+How does it affect you? Mostly it doesn't. Boop Park is generated using popular, documented, secured, and supported production-ready open-source components & packages so you know it is ready to use. I mostly wanted to make the tools and project available as soon as possible for anyone who will benefit from them.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
+
+## Contributers
+
+<br>
+
+- [Derek Mason](https://derekmason.dev) is a software developer and personal trainer in Denver, CO.
+
+---
