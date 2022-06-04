@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 const User = require("./db/models/user");
 
 export default async function handler(req, res) {
-  const connection =
-    "mongodb+srv://derekmason:boop@boop.y55kq.mongodb.net/?retryWrites=true&w=majority";
+  const connection = process.env.MONGODB_URI;
   mongoose.connect(connection, function (err) {
     if (err) throw err;
   });
