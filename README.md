@@ -10,8 +10,6 @@
 
 The name **Boop Park** simply comes from the first time I told a roommate about Hoops Park, they misheard what I said and it has been referred to as _Boop_ Park ever since.
 
-<br>
-
 ---
 
 ## Features
@@ -31,8 +29,6 @@ The name **Boop Park** simply comes from the first time I told a roommate about 
 > Custom training programs
 
 - Written by a certified personal trainer
-
-<br>
 
 ---
 
@@ -60,13 +56,9 @@ From the exercise page you will be able to navigate through each exercise of the
 
 <img src="public/assets/completed.png" height="40"/>
 
-<br>
-
 ---
 
 ## Local Environment
-
-<br>
 
 Start development server after installing dependencies from `./root`
 
@@ -84,11 +76,7 @@ Navigate to [localhost:3030](http://localhost:3030/) to view the running app.
 
 ---
 
-<br>
-
 ## Beta Version
-
-<br>
 
 Boop Park is currently in Beta version. This means essential features like user profiles, security, accessibility, and community involvement and feedback, are still being worked on.
 
@@ -96,11 +84,7 @@ How does it affect you? Mostly it doesn't. Boop Park is generated using popular,
 
 ---
 
-<br>
-
 ## Contributers
-
-<br>
 
 - [Derek Mason](https://derekmason.dev) is a software developer and personal trainer in Denver, CO.
 
