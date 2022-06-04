@@ -60,8 +60,6 @@ From the exercise page you will be able to navigate through each exercise of the
 
 <img src="public/assets/completed.png" height="40"/>
 
-<br>
-
 ---
 
 ## Local Environment
