@@ -71,9 +71,6 @@ const SignUpPage = () => {
       <Container component="div" maxWidth="xs">
         <Box className={styles.signUpForm}>
           <BoopHeader />
-          {/* <Avatar>
-            <LockOutlinedIcon color="primary" />
-          </Avatar> */}
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>

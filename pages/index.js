@@ -22,7 +22,6 @@ const Landing = () => {
           component="h1"
           variant="h2"
           align="center"
-          // color="text.primary"
           gutterBottom
         >
           Happy {getDayOfWeek()}, {capatilize(currentUser?.first_name)}!

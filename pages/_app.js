@@ -30,6 +30,4 @@ function MyApp({ Component, pageProps }) {
     </ThemeProvider>
   );
 }
-
-// export default wrapper.withRedux(MyApp);
 export default MyApp;
