@@ -1,4 +1,4 @@
-<img src='.assets/net.png'/>
+<img src='public/assets/net.png'/>
 
 <br>
 
@@ -44,21 +44,21 @@ The name **Boop Park** simply comes from the first time I told a roommate about 
 
 Boop Park is completely free to use, you won't even need an email address to sign up.
 
-<img src="./assets/sign-up.png" height="240"/>
+<img src="public/assets/sign-up.png" height="240"/>
 
 Upon successfully creating an account you will be redirected to the home landing page.
 
 This is where you will be able to choose from the variety of training programs available.
 
-<img src="./assets/landing.png" height="240"/>
+<img src="public/assets/landing.png" height="240"/>
 
 Choose what type of workout you want to do and what level you want to train at. _\*Obviously starting with Level 1 is recommended_.
 
-<img src="./assets/workout.png" height="240"/>
+<img src="public/assets/workout.png" height="240"/>
 
 From the exercise page you will be able to navigate through each exercise of the workout. When you get to the end you can choose to go back and look over the exercises, or return to the home page.
 
-<img src="./assets/completed.png" height="40"/>
+<img src="public/assets/completed.png" height="40"/>
 
 <br>
 
