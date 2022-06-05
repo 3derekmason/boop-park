@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 const User = require("./db/models/user");
 
+dotenv.config();
+
 export default async function handler(req, res) {
-  const connection =
-    "mongodb+srv://derekmason:boop@boop.y55kq.mongodb.net/?retryWrites=true&w=majority";
+  const connection = process.env.MONGODB_URI;
   mongoose.connect(connection, function (err) {
     if (err) throw err;
   });
