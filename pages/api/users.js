@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
-
+const dotenv = require("dotenv");
 const User = require("./db/models/user");
+
+dotenv.config();
 
 export default async function handler(req, res) {
   const connection = process.env.MONGODB_URI;
